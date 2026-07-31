@@ -8,8 +8,8 @@ Uruchamia serwer na localhost:5020 z 4 rejestrami holding:
 """
 
 from pymodbus.server import StartTcpServer
-from pymodbus.datastore import ModbusSlaveContext, ModbusServerContext
 from pymodbus.datastore import ModbusSequentialDataBlock
+from pymodbus.datastore.context import ModbusServerContext, ModbusSlaveContext
 import logging
 
 logging.basicConfig(level=logging.INFO)
